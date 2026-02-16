@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Basic HTML5 Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+
+        header, section, footer {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        nav a {
+            margin-right: 15px;
+        }
+
+       
+        .gallery {
+            margin-top: 20px;
+        }
+
+        .item {
+            position: relative;
+            display: inline-block;
+        }
+
+        .item img {
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            display: block;
+        }
+
+    
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            border-radius: 0 0 10px 10px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .item:hover .caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body bgcolor="lightblue">
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+        <marquee behavior="scroll" direction="left">
+            Hi Everyone ! My Name is Amit
+        </marquee>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#lists">Lists</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About HTML5</h2>
+        <p>
+            <strong>HTML5</strong> is the latest version of HTML. 
+            It supports <em>modern multimedia</em> and 
+            <mark>semantic elements</mark>.
+        </p>
+
+        <p>
+            Here is an example of <u>underlined text</u>, 
+            <small>small text</small>, and H<sub>2</sub>O using subscript.
+        </p>
+
+
+        <div class="gallery">
+            <div class="item">
+                <img src="https://static.wikia.nocookie.net/disney/images/1/10/Profile_-_Lightning_McQueen.png/revision/latest/thumbnail/width/360/height/360?cb=20221003093816" alt="Lightning McQueen">
+                <span class="caption">Lightning McQueen Car</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="lists">
+        <h2>HTML Lists Examples</h2>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Learn HTML</li>
+            <li>Practice Coding</li>
+            <li>Build Projects</li>
+        </ol>
+
+        <h3>Description List</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JS</dt>
+            <dd>JavaScript Programming Language</dd>
+        </dl>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>
+            Visit 
+            <a href="https://www.w3schools.com/" target="_blank">
+                W3Schools
+            </a> for more tutorials.
+        </p>
+
+        <p>
+            Send me an email:
+            <a href="mailto:amitjapulkar20@gmail.com">
+                amitjapulkar20@gmail.com
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 My Basic Webpage. Amitjapulkar@All Copyright rights reserved.</p>
+    </footer>
+
+</body>
+</html>
